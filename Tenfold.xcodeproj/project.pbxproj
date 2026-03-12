@@ -6,27 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		566032612F62775700D39E81 /* ClipboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566032592F62775700D39E81 /* ClipboardItem.swift */; };
+		566032622F62775700D39E81 /* ClipboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5660325A2F62775700D39E81 /* ClipboardManager.swift */; };
+		566032632F62775700D39E81 /* ClipboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5660325B2F62775700D39E81 /* ClipboardMonitor.swift */; };
+		566032642F62775700D39E81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5660325C2F62775700D39E81 /* ContentView.swift */; };
+		566032652F62775700D39E81 /* HotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5660325D2F62775700D39E81 /* HotkeyManager.swift */; };
+		566032662F62775700D39E81 /* TenfoldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566032602F62775700D39E81 /* TenfoldApp.swift */; };
+		566032692F62775700D39E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566032582F62775700D39E81 /* Assets.xcassets */; };
+		5660326B2F62775700D39E81 /* README 2.md in Resources */ = {isa = PBXBuildFile; fileRef = 5660325F2F62775700D39E81 /* README 2.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		566032582F62775700D39E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		566032592F62775700D39E81 /* ClipboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItem.swift; sourceTree = "<group>"; };
+		5660325A2F62775700D39E81 /* ClipboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardManager.swift; sourceTree = "<group>"; };
+		5660325B2F62775700D39E81 /* ClipboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitor.swift; sourceTree = "<group>"; };
+		5660325C2F62775700D39E81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5660325D2F62775700D39E81 /* HotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyManager.swift; sourceTree = "<group>"; };
+		5660325E2F62775700D39E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5660325F2F62775700D39E81 /* README 2.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README 2.md"; sourceTree = "<group>"; };
+		566032602F62775700D39E81 /* TenfoldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenfoldApp.swift; sourceTree = "<group>"; };
 		566452C02F5E3DBF00651043 /* Tenfold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tenfold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		566452DB2F5E516400651043 /* Exceptions for "Tenfold" folder in "Tenfold" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 566452BF2F5E3DBF00651043 /* Tenfold */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		566452C22F5E3DBF00651043 /* Tenfold */ = {
+		5660326E2F627F0500D39E81 /* docs */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				566452DB2F5E516400651043 /* Exceptions for "Tenfold" folder in "Tenfold" target */,
-			);
-			path = Tenfold;
+			path = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,8 +52,17 @@
 		566452B72F5E3DBF00651043 = {
 			isa = PBXGroup;
 			children = (
-				566452C22F5E3DBF00651043 /* Tenfold */,
 				566452C12F5E3DBF00651043 /* Products */,
+				5660326E2F627F0500D39E81 /* docs */,
+				566032582F62775700D39E81 /* Assets.xcassets */,
+				566032592F62775700D39E81 /* ClipboardItem.swift */,
+				5660325A2F62775700D39E81 /* ClipboardManager.swift */,
+				5660325B2F62775700D39E81 /* ClipboardMonitor.swift */,
+				5660325C2F62775700D39E81 /* ContentView.swift */,
+				5660325D2F62775700D39E81 /* HotkeyManager.swift */,
+				5660325E2F62775700D39E81 /* Info.plist */,
+				5660325F2F62775700D39E81 /* README 2.md */,
+				566032602F62775700D39E81 /* TenfoldApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,7 +90,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				566452C22F5E3DBF00651043 /* Tenfold */,
+				5660326E2F627F0500D39E81 /* docs */,
 			);
 			name = Tenfold;
 			packageProductDependencies = (
@@ -122,6 +138,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566032692F62775700D39E81 /* Assets.xcassets in Resources */,
+				5660326B2F62775700D39E81 /* README 2.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566032612F62775700D39E81 /* ClipboardItem.swift in Sources */,
+				566032622F62775700D39E81 /* ClipboardManager.swift in Sources */,
+				566032632F62775700D39E81 /* ClipboardMonitor.swift in Sources */,
+				566032642F62775700D39E81 /* ContentView.swift in Sources */,
+				566032652F62775700D39E81 /* HotkeyManager.swift in Sources */,
+				566032662F62775700D39E81 /* TenfoldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
