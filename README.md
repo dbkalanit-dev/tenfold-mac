@@ -1,4 +1,4 @@
-# ⌨️ Tenfold: AI-Accelerated Clipboard Utility
+# ⌨️ Tenfold: Productivity Enhancing Clipboard Utility
 **A high-performance, background-monitored macOS utility that eliminates "context-switching" fatigue by transforming the system clipboard into a searchable productivity stream.**
 
 ## 🎯 Project Overview
