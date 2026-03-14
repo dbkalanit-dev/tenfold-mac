@@ -52,6 +52,27 @@ As a Product Manager, I built this to explore:
 
 * **UI Footprint:** Optimized the background architecture to ensure the utility maintains high responsiveness without consuming system resources.
 
+## ⚠️ Known Issues & Troubleshooting
+**Tenfold is currently in its MVP phase, and while the core functionality is stable, I am actively monitoring and addressing the following behaviors:**
+
+* **Event Listener Redundancy (The "Double-Paste" Bug):**
+* **Description:** Under specific conditions, the paste function may trigger multiple times upon a single user command.
+
+* **Technical Hypothesis:** This appears to be a race condition involving lingering event listeners. I am currently investigating the cleanup lifecycle in the ClipboardMonitor class to ensure all observers are properly deallocated when the app state changes.
+
+* **Workaround:** If you encounter this, simply restart the application to clear the active process and reset the event loop.
+
+* **Accessibility Permission Persistence:**
+
+* **Description:** On certain macOS versions, if you toggle Accessibility permissions in System Settings, you may need to restart Tenfold for the secure event monitoring to re-attach successfully.
+
+* **Workaround:** Ensure Tenfold is checked in System Settings > Privacy & Security > Accessibility and restart the app.
+
+**Memory Usage:** 
+* **Description:** As an MVP, the background footprint is optimized for responsiveness rather than ultra-low memory.
+
+* **Current Focus:** I am currently profiling the memory usage during high-frequency clipboard activity to further refine resource allocation.
+
 ## About the Author
 I am a Senior Product Manager with 12 years of experience within the Salesforce and Tableau ecosystems, specializing in technical product management, data platforms, and B2B SaaS. I’m currently focused on modernizing legacy systems into unified "sources of truth" that prioritize human-centered design and strict data governance.
 
