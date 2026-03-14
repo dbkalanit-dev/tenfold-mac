@@ -55,14 +55,14 @@ As a Product Manager, I built this to explore:
 ## ⚠️ Known Issues & Troubleshooting
 **Tenfold is currently in its MVP phase, and while the core functionality is stable, I am actively monitoring and addressing the following behaviors:**
 
-* **Event Listener Redundancy (The "Double-Paste" Bug):**
+**Event Listener Redundancy (The "Double-Paste" Bug):**
 * **Description:** Under specific conditions, the paste function may trigger multiple times upon a single user command.
 
 * **Technical Hypothesis:** This appears to be a race condition involving lingering event listeners. I am currently investigating the cleanup lifecycle in the ClipboardMonitor class to ensure all observers are properly deallocated when the app state changes.
 
 * **Workaround:** If you encounter this, simply restart the application to clear the active process and reset the event loop.
 
-* **Accessibility Permission Persistence:**
+**Accessibility Permission Persistence:**
 
 * **Description:** On certain macOS versions, if you toggle Accessibility permissions in System Settings, you may need to restart Tenfold for the secure event monitoring to re-attach successfully.
 
